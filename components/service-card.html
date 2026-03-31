@@ -1,0 +1,39 @@
+<!-- ══════════════════════════════════════════════
+     SERVICE CARD — Component Examples
+     Use class="card service-card" on an <article>.
+     Add data-category="cosmetic|restorative|orthodontics|specialty|emergency"
+     for filter functionality.
+══════════════════════════════════════════════ -->
+
+<!-- Example 1: Standard service card -->
+<article class="card service-card" data-category="cosmetic" role="listitem">
+  <div class="service-card__icon" aria-hidden="true">💎</div>
+  <div class="service-card__title">Smile Makeover</div>
+  <p class="service-card__desc">Complete aesthetic transformation combining veneers, whitening, gum contouring, and bonding — custom-designed to your facial features.</p>
+  <div class="service-card__footer">
+    <span class="service-card__price">From $8,500</span>
+    <span class="service-card__arrow">→</span>
+  </div>
+</article>
+
+<!-- Example 2: With reveal animation -->
+<article class="card service-card reveal delay-1" data-category="restorative" role="listitem">
+  <div class="service-card__icon" aria-hidden="true">🔩</div>
+  <div class="service-card__title">Dental Implants</div>
+  <p class="service-card__desc">Nobel Biocare implants with zirconia crowns. Full arch, single tooth, or implant-supported dentures — all placed and restored in-house.</p>
+  <div class="service-card__footer">
+    <span class="service-card__price">From $3,400</span>
+    <span class="service-card__arrow">→</span>
+  </div>
+</article>
+
+<!-- Example 3: Teal-accent pricing (e.g., emergency) -->
+<article class="card service-card" data-category="specialty" role="listitem">
+  <div class="service-card__icon" aria-hidden="true">🚨</div>
+  <div class="service-card__title">Emergency Concierge</div>
+  <p class="service-card__desc">24-hour concierge dental emergencies. Priority booking, same-day private suites for discrete urgent care.</p>
+  <div class="service-card__footer">
+    <span class="service-card__price" style="color:var(--teal)">Priority access</span>
+    <span class="service-card__arrow">→</span>
+  </div>
+</article>

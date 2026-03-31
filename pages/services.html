@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lumina Dental Services — Smile makeovers, porcelain veneers, Invisalign Platinum, dental implants, and more in Beverly Hills.">
+  <title>Services | Lumina Dental · Beverly Hills</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Lumina Dental home">
+        <div class="nav__logo-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 3C8.4 3 6.5 4.3 5.5 6.2 4.6 7.9 4.5 9.8 5.2 12 6 14.5 6.5 16.2 7.1 17.9 7.7 19.5 8.4 20.5 9.5 20.5c1.2 0 1.7-1.7 2-3.3.3 1.6.8 3.3 2 3.3 1.1 0 1.8-.8 2.4-2.6.6-1.7 1.1-3.4 1.9-5.9.7-2.2.6-4.1-.3-5.8C16.5 4.3 14.6 3 12 3L11 3z" fill="#070A0F" opacity="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="nav__logo-name">Lumina Dental</div>
+          <div class="nav__logo-sub">Luxury Dentistry · Beverly Hills</div>
+        </div>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a class="nav__link active" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="about.html">Studio</a></li>
+        <li><a class="nav__link" href="team.html">Doctors</a></li>
+        <li><a class="nav__link" href="../index.html#reviews">Stories</a></li>
+        <li><a class="nav__link" href="../index.html#pricing">Membership</a></li>
+        <li><a class="nav__link" href="../index.html#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__right">
+        <a class="nav__phone" href="tel:+13105550182">(310) 555-0182</a>
+        <a class="btn btn--gold btn--sm" href="contact.html">Book Consultation</a>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section section--dark" aria-labelledby="services-page-heading">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <div class="eyebrow">Our Services</div>
+        <h1 class="section-title" id="services-page-heading">Every Service, <em>Refined to Perfection</em></h1>
+        <p class="section-sub">From preventive care to complete aesthetic transformation — every procedure is performed with precision materials and master-level technique.</p>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:var(--sp-8);justify-content:center" role="group" aria-label="Filter services">
+        <button class="btn btn--gold btn--sm active" data-filter="all">All</button>
+        <button class="btn btn--ghost btn--sm" data-filter="cosmetic">Cosmetic</button>
+        <button class="btn btn--ghost btn--sm" data-filter="restorative">Restorative</button>
+        <button class="btn btn--ghost btn--sm" data-filter="orthodontics">Orthodontics</button>
+        <button class="btn btn--ghost btn--sm" data-filter="specialty">Specialty</button>
+      </div>
+
+      <div class="services-grid" role="list">
+        <article class="card service-card reveal delay-1" data-category="cosmetic" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">💎</div>
+          <div class="service-card__title">Smile Makeover</div>
+          <p class="service-card__desc">Complete aesthetic transformation combining veneers, whitening, gum contouring, and bonding — custom-designed to your facial features.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $8,500</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-2" data-category="cosmetic" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">✨</div>
+          <div class="service-card__title">Porcelain Veneers</div>
+          <p class="service-card__desc">Ultra-thin, ultra-lifelike ceramic shells crafted by our master-ceramist lab partner. Digital smile preview before any preparation.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $1,400/tooth</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-3" data-category="orthodontics" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">💎</div>
+          <div class="service-card__title">Invisalign Platinum</div>
+          <p class="service-card__desc">Elite-tier clear aligner therapy. Platinum provider status — among the top 1% of Invisalign practitioners nationwide.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $5,200</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-1" data-category="restorative" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🔩</div>
+          <div class="service-card__title">Dental Implants</div>
+          <p class="service-card__desc">Nobel Biocare implants with zirconia crowns. Full arch, single tooth, or implant-supported dentures — all placed and restored in-house.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $3,400</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-2" data-category="cosmetic" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🌟</div>
+          <div class="service-card__title">Zoom Whitening</div>
+          <p class="service-card__desc">In-office Philips Zoom! with custom take-home trays. Up to 8 shades brighter in a single 75-minute session.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $750</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-3" data-category="restorative" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🛡️</div>
+          <div class="service-card__title">Full-Mouth Rehab</div>
+          <p class="service-card__desc">Comprehensive restoration of all teeth — crowns, implants, bridges, and tissue procedures — under one unified treatment plan.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">Custom quote</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-1" data-category="cosmetic" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🌊</div>
+          <div class="service-card__title">Gum Recontouring</div>
+          <p class="service-card__desc">Laser-sculpted gum line correction for a balanced, symmetrical smile. No scalpel, no sutures, minimal recovery time.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $600</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-2" data-category="specialty" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">🚨</div>
+          <div class="service-card__title">Emergency Concierge</div>
+          <p class="service-card__desc">24-hour concierge dental emergencies. Priority booking, same-day private suites for discrete urgent care.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price" style="color:var(--teal)">Priority access</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+        <article class="card service-card reveal delay-3" data-category="specialty" role="listitem">
+          <div class="service-card__icon" aria-hidden="true">😴</div>
+          <div class="service-card__title">IV Sedation</div>
+          <p class="service-card__desc">Board-certified anesthesiology support. Wake up with a transformed smile — no anxiety, no memory, no discomfort.</p>
+          <div class="service-card__footer">
+            <span class="service-card__price">From $800</span>
+            <span class="service-card__arrow">→</span>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:var(--sp-12)">
+        <a class="btn btn--gold btn--lg" href="contact.html">Book a Consultation →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="gold-rule"></div>
+  <div class="container">
+    <div class="footer__bottom">
+      <div class="footer__copy">&copy; 2025 Lumina Dental, PC · Beverly Hills, CA · All rights reserved</div>
+      <nav class="footer__legal" aria-label="Legal">
+        <a class="footer__legal-link" href="#">Privacy Policy</a>
+        <a class="footer__legal-link" href="#">HIPAA Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

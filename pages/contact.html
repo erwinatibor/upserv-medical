@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Lumina Dental — Book a consultation, get directions, or reach our concierge team in Beverly Hills.">
+  <title>Contact & Directions | Lumina Dental · Beverly Hills</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Lumina Dental home">
+        <div class="nav__logo-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 3C8.4 3 6.5 4.3 5.5 6.2 4.6 7.9 4.5 9.8 5.2 12 6 14.5 6.5 16.2 7.1 17.9 7.7 19.5 8.4 20.5 9.5 20.5c1.2 0 1.7-1.7 2-3.3.3 1.6.8 3.3 2 3.3 1.1 0 1.8-.8 2.4-2.6.6-1.7 1.1-3.4 1.9-5.9.7-2.2.6-4.1-.3-5.8C16.5 4.3 14.6 3 12 3L11 3z" fill="#070A0F" opacity="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="nav__logo-name">Lumina Dental</div>
+          <div class="nav__logo-sub">Luxury Dentistry · Beverly Hills</div>
+        </div>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a class="nav__link" href="services.html">Services</a></li>
+        <li><a class="nav__link" href="about.html">Studio</a></li>
+        <li><a class="nav__link" href="team.html">Doctors</a></li>
+        <li><a class="nav__link" href="../index.html#reviews">Stories</a></li>
+        <li><a class="nav__link" href="../index.html#pricing">Membership</a></li>
+        <li><a class="nav__link" href="../index.html#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__right">
+        <a class="nav__phone" href="tel:+13105550182">(310) 555-0182</a>
+        <a class="btn btn--gold btn--sm" href="contact.html">Book Consultation</a>
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section section--dark" aria-labelledby="contact-page-heading">
+    <div class="container contact__inner">
+      <div>
+        <div class="eyebrow">Book a Visit</div>
+        <h1 class="section-title reveal" id="contact-page-heading">Begin Your <em>Transformation</em></h1>
+        <p class="section-sub reveal delay-1" style="margin-bottom:var(--sp-8)">Our patient coordinator will confirm your appointment and answer any questions before your first visit.</p>
+
+        <form class="contact-form js-booking-form" novalidate aria-label="Appointment booking form">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input class="form-input" type="text" id="name" name="name" placeholder="Alexandra Smith" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input" type="tel" id="phone" name="phone" placeholder="(310) 555-0000" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="dob">Date of Birth</label>
+            <input class="form-input" type="date" id="dob" name="dob">
+          </div>
+          <div class="form-group contact-form__full">
+            <label class="form-label" for="service">Service of Interest</label>
+            <select class="form-select" id="service" name="service" required>
+              <option value="" disabled selected>Select a service…</option>
+              <option>Smile Makeover Consultation</option>
+              <option>Porcelain Veneers</option>
+              <option>Invisalign Platinum</option>
+              <option>Dental Implants</option>
+              <option>Zoom Whitening</option>
+              <option>Full-Mouth Rehabilitation</option>
+              <option>Gum Recontouring</option>
+              <option>Emergency Concierge</option>
+              <option>IV Sedation Dentistry</option>
+              <option>General / Preventive Visit</option>
+              <option>Not sure — need assessment</option>
+            </select>
+          </div>
+          <div class="form-group contact-form__full">
+            <label class="form-label" for="insurance">Insurance (if applicable)</label>
+            <input class="form-input" type="text" id="insurance" name="insurance" placeholder="Delta Dental, Cigna, Aetna, self-pay…">
+          </div>
+          <div class="form-group contact-form__full">
+            <label class="form-label" for="notes">Notes or Questions</label>
+            <textarea class="form-textarea" id="notes" name="notes" placeholder="Describe any concerns, cosmetic goals, or questions…"></textarea>
+          </div>
+          <div class="form-group contact-form__full">
+            <label class="form-check">
+              <input type="checkbox" name="newpatient" checked>
+              I am a new patient at Lumina Dental
+            </label>
+          </div>
+          <div class="form-group contact-form__full">
+            <button class="btn btn--gold btn--lg btn--full" type="submit">
+              Request Private Consultation
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 7.5H12M9.5 5L12 7.5L9.5 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <aside aria-label="Contact information">
+        <div class="card" style="padding:var(--sp-6)">
+          <div class="status-indicator" style="margin-bottom:var(--sp-5)">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open today · Closes 6 PM
+          </div>
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-info-label">Address</div>
+                <div class="contact-info-value">414 N Camden Drive, Suite 900<br>Beverly Hills, CA 90210</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact-info-label">Phone</div>
+                <div class="contact-info-value"><a href="tel:+13105550182">(310) 555-0182</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-info-label">Email</div>
+                <div class="contact-info-value"><a href="mailto:concierge@luminadental.com">concierge@luminadental.com</a></div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">🕐</div>
+              <div>
+                <div class="contact-info-label">Hours</div>
+                <div class="contact-info-value">
+                  Mon–Fri: 9 AM – 6 PM<br>
+                  Wednesday: 9 AM – 7 PM<br>
+                  Saturday: 10 AM – 3 PM<br>
+                  Sunday: By appointment
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-placeholder" style="margin-top:var(--sp-5)" role="img" aria-label="Map: Lumina Dental, 414 N Camden Drive, Beverly Hills CA">
+            <div class="map-grid" aria-hidden="true"></div>
+            <div class="map-pin">
+              <div class="map-pin__dot" aria-hidden="true"></div>
+              <div class="map-pin__label">Lumina Dental · Beverly Hills</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="gold-rule"></div>
+  <div class="container">
+    <div class="footer__bottom">
+      <div class="footer__copy">&copy; 2025 Lumina Dental, PC · Beverly Hills, CA · All rights reserved</div>
+      <nav class="footer__legal" aria-label="Legal">
+        <a class="footer__legal-link" href="#">Privacy Policy</a>
+        <a class="footer__legal-link" href="#">HIPAA Notice</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

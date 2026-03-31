@@ -1,0 +1,125 @@
+<!-- ══════════════════════════════════════════════
+     HERO SECTION — Annotated Template
+     4-checkpoint split-screen layout with gold sidebar
+
+     Structure:
+     .hero (grid: 2 columns)
+       ├── .hero__left (4 checkpoints + CTA + trust row)
+       │     ├── .checkpoint  (01 - Who We Are)
+       │     ├── .checkpoint  (02 - What We Do — contains <h1>)
+       │     ├── .checkpoint  (03 - Who It's For)
+       │     ├── .checkpoint  (04 - Why It Matters Now)
+       │     ├── .hero__cta   (Book + Phone buttons)
+       │     └── .hero__trust (ADA, Financing, Warranty badges)
+       └── .hero__right (sidebar cards)
+             ├── .profile-card  (Lead dentist card)
+             ├── .s-stats       (4 stat boxes)
+             ├── .s-card        (Signature services list)
+             └── .s-card        (Insurance pills)
+══════════════════════════════════════════════ -->
+<section id="hero" class="hero" data-section="hero" aria-label="Hero">
+
+  <!-- Left: 4 Checkpoints -->
+  <div class="hero__left">
+
+    <!-- CP 1: Who We Are -->
+    <div class="checkpoint">
+      <div class="cp-step">
+        <div class="cp-num" aria-hidden="true">01</div>
+        <div class="cp-connector"></div>
+      </div>
+      <div class="cp-body">
+        <div class="cp-label">Who We Are</div>
+        <!-- Identity badge with icon + name -->
+        <div class="cp-identity">
+          <div class="cp-identity__icon" aria-hidden="true">💎</div>
+          <div>
+            <div class="cp-identity__name">Lumina Dental</div>
+            <div class="cp-identity__sub">Luxury Cosmetic Dentistry · Beverly Hills, CA</div>
+          </div>
+        </div>
+        <!-- Status pills -->
+        <div class="cp-pills">
+          <span class="pill pill--teal"><span class="status-dot" aria-hidden="true"></span>Accepting New Patients</span>
+          <span class="pill pill--gold">Concierge Practice</span>
+          <span class="pill pill--ghost">Invisalign Platinum</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CP 2: What We Do (contains main headline) -->
+    <div class="checkpoint">
+      <div class="cp-step">
+        <div class="cp-num" aria-hidden="true">02</div>
+        <div class="cp-connector"></div>
+      </div>
+      <div class="cp-body">
+        <div class="cp-label">What We Do</div>
+        <h1 class="cp-headline">
+          Where Artistry<br>
+          Meets <em>Dentistry.</em>
+        </h1>
+        <!-- Service chips -->
+        <div class="cp-chips">
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>Smile Makeovers</span>
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>Porcelain Veneers</span>
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>Invisalign</span>
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>Dental Implants</span>
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>Full-Mouth Rehab</span>
+          <span class="cp-chip"><span class="cp-chip-dot" aria-hidden="true"></span>IV Sedation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CP 3: Who It's For -->
+    <div class="checkpoint">
+      <div class="cp-step">
+        <div class="cp-num" aria-hidden="true">03</div>
+        <div class="cp-connector"></div>
+      </div>
+      <div class="cp-body">
+        <div class="cp-label">Who It's For</div>
+        <p class="cp-audience">
+          Designed for <strong>discerning patients</strong> who expect more — executives,
+          performers, and anyone who understands that their smile is their most
+          visible asset.
+        </p>
+      </div>
+    </div>
+
+    <!-- CP 4: Why It Matters Now (highlight card) -->
+    <div class="checkpoint">
+      <div class="cp-step">
+        <div class="cp-num" aria-hidden="true">04</div>
+      </div>
+      <div class="cp-body">
+        <div class="cp-label">Why It Matters Now</div>
+        <div class="cp-highlight">
+          <div class="cp-highlight__tag">✦ Your smile is your first impression</div>
+          <div class="cp-highlight__title">See your result before we begin</div>
+          <div class="cp-highlight__body">Digital Smile Design lets you approve your new smile before a single tooth is touched.</div>
+          <div class="cp-highlight__items">
+            <!-- Checkmark items go here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA buttons -->
+    <div class="hero__cta">
+      <a class="btn btn--gold btn--lg" href="#contact">Book Private Consultation</a>
+      <span class="hero__cta-divider" aria-hidden="true">or</span>
+      <a class="btn btn--ghost" href="tel:+13105550182">(310) 555-0182</a>
+    </div>
+
+    <!-- Trust row -->
+    <div class="hero__trust">
+      <!-- Trust items go here -->
+    </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <aside class="hero__right" aria-label="Quick info">
+    <!-- Profile card, stat grid, service list, insurance card -->
+  </aside>
+</section>

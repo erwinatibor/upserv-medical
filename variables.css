@@ -1,0 +1,77 @@
+/* ============================================================
+   APEX DENTAL — Design Tokens
+   Aesthetic: Bold Editorial / Magazine
+   css/variables.css
+   ============================================================ */
+:root {
+
+  /* ── Off-white paper / ink ── */
+  --paper:        #F5F0E8;
+  --paper-warm:   #EDE6D6;
+  --paper-cream:  #FAF7F2;
+  --ink:          #0A0A08;
+  --ink-70:       rgba(10,10,8,0.70);
+  --ink-40:       rgba(10,10,8,0.40);
+  --ink-20:       rgba(10,10,8,0.20);
+  --ink-10:       rgba(10,10,8,0.10);
+  --ink-06:       rgba(10,10,8,0.06);
+  --white:        #FFFFFF;
+
+  /* ── Signal Red (primary accent) ── */
+  --red-600:      #C41C1C;
+  --red-500:      #E0251E;
+  --red-400:      #F54040;
+  --red-dim:      rgba(196,28,28,0.10);
+  --red-line:     rgba(196,28,28,0.25);
+
+  /* ── Warm accent (amber/ochre for editorial pull-outs) ── */
+  --ochre:        #BF8C20;
+  --ochre-dim:    rgba(191,140,32,0.12);
+  --ochre-line:   rgba(191,140,32,0.28);
+
+  /* ── Soft sage (third accent, sparingly) ── */
+  --sage:         #4A7060;
+  --sage-dim:     rgba(74,112,96,0.10);
+
+  /* ── Semantics ── */
+  --color-bg:       var(--paper-cream);
+  --color-surface:  var(--white);
+  --color-surface2: var(--paper);
+  --color-text:     var(--ink);
+  --color-body:     var(--ink-70);
+  --color-muted:    var(--ink-40);
+  --color-border:   var(--ink-20);
+  --color-border-lt:var(--ink-10);
+  --color-accent:   var(--red-600);
+
+  /* ── Typography ── */
+  --font-display: 'Bebas Neue', 'Impact', 'Anton', sans-serif;
+  --font-headline:'Playfair Display', Georgia, serif;
+  --font-body:    'Work Sans', 'Helvetica Neue', sans-serif;
+
+  /* ── Spacing ── */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:20px;
+  --sp-6:24px; --sp-8:32px; --sp-10:40px; --sp-12:48px;
+  --sp-16:64px; --sp-20:80px; --sp-24:96px;
+
+  /* ── Radius ── */
+  --r-xs:2px; --r-sm:4px; --r-md:6px; --r-lg:12px;
+  --r-xl:20px; --r-full:999px;
+
+  /* ── Shadows ── */
+  --shadow-card: 0 1px 0 rgba(10,10,8,0.08), 0 4px 18px rgba(10,10,8,0.07);
+  --shadow-lift: 0 8px 40px rgba(10,10,8,0.12), 0 2px 8px rgba(10,10,8,0.08);
+  --shadow-red:  0 4px 24px rgba(196,28,28,0.20);
+
+  /* ── Transitions ── */
+  --ease-out:    cubic-bezier(0.16,1,0.3,1);
+  --ease-spring: cubic-bezier(0.34,1.56,0.64,1);
+  --dur-fast: 140ms; --dur-base: 240ms; --dur-slow: 400ms;
+
+  /* ── Layout ── */
+  --container-max: 1280px;
+  --container-pad: clamp(20px, 5vw, 72px);
+  --nav-height:    68px;
+  --section-gap:   clamp(80px, 10vw, 140px);
+  --col-gap:       24px;
+}

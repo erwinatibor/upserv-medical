@@ -1,0 +1,45 @@
+<!-- ══════════════════════════════════════════════
+     DOCTOR CARD — Component Examples
+     Use class="card doctor-card" on an <article>.
+     Set avatar gradient via inline style on .doctor-card__photo.
+     Tags use .pill--gold or .pill--teal for specialty, .pill--ghost for general.
+══════════════════════════════════════════════ -->
+
+<!-- Example 1: Gold gradient (Lead Cosmetic Dentist) -->
+<article class="card doctor-card" role="listitem">
+  <div class="doctor-card__photo" style="background:linear-gradient(135deg,#C9A84C,#DDB96A)" aria-label="Dr. Alexandra Voss">AV</div>
+  <div class="doctor-card__cred">DDS, FAGD</div>
+  <div class="doctor-card__name">Dr. Alexandra Voss</div>
+  <div class="doctor-card__role">Lead Cosmetic Dentist</div>
+  <div class="doctor-card__tags">
+    <span class="pill pill--gold">Smile Design</span>
+    <span class="pill pill--gold">Veneers</span>
+    <span class="pill pill--ghost">Implants</span>
+  </div>
+</article>
+
+<!-- Example 2: Dark gradient (Orthodontics) -->
+<article class="card doctor-card" role="listitem">
+  <div class="doctor-card__photo" style="background:linear-gradient(135deg,#1D2436,#2A3654)" aria-label="Dr. Rafael Kim">RK</div>
+  <div class="doctor-card__cred">DMD, MS</div>
+  <div class="doctor-card__name">Dr. Rafael Kim</div>
+  <div class="doctor-card__role">Orthodontics & Invisalign</div>
+  <div class="doctor-card__tags">
+    <span class="pill pill--gold">Invisalign</span>
+    <span class="pill pill--ghost">Braces</span>
+    <span class="pill pill--ghost">TMJ</span>
+  </div>
+</article>
+
+<!-- Example 3: Teal gradient (Aesthetic Specialist) -->
+<article class="card doctor-card" role="listitem">
+  <div class="doctor-card__photo" style="background:linear-gradient(135deg,#2ABFAD,#22A596)" aria-label="Dr. Naomi Sato">NS</div>
+  <div class="doctor-card__cred">DDS, AAACD</div>
+  <div class="doctor-card__name">Dr. Naomi Sato</div>
+  <div class="doctor-card__role">Aesthetic Specialist</div>
+  <div class="doctor-card__tags">
+    <span class="pill pill--teal">Veneers</span>
+    <span class="pill pill--teal">Whitening</span>
+    <span class="pill pill--ghost">Bonding</span>
+  </div>
+</article>
